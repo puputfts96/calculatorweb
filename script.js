@@ -58,6 +58,11 @@ const inputOperator=(operator)=>{
 	if (calculationOperator==='') {
 		prevNumber=currentNumber;
 	}
+	if (currentNumber!='0') {
+		calculate();
+		prevNumber=currentNumber;
+		updateScreen(currentNumber);
+	}
 	calculationOperator=operator;
 	currentNumber='0';
 }
